@@ -1,5 +1,5 @@
 #!/bin/bash
-TARGET_DEVICE=RMX1931
+TARGET_DEVICE=RMX2001
 # configure some default settings for the build
 Default_Settings() {
 #export FOX_USE_LZMA_COMPRESSION="1"
@@ -26,7 +26,7 @@ export OF_SCREEN_H="2400"
 export OF_STATUS_INDENT_LEFT="48"
 export OF_STATUS_INDENT_RIGHT="48"
 export OF_SUPPORT_OZIP_DECRYPTION="1"
-export OF_TARGET_DEVICES="RMX1931,RMX1931CN,RMX1931L1"
+export OF_TARGET_DEVICES="RMX2001,RMX1931CN,RMX1931L1"
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES="1"
 export OF_USE_NEW_MAGISKBOOT="1"
 export TARGET_ARCH="arm64"
@@ -49,7 +49,7 @@ do_build() {
 
   lunch omni_"$TARGET_DEVICE"-eng
 
-  time mka recoveryimage && cd device/realme/RMX1931
+  time mka recoveryimage && cd device/realme/RMX2001
 }
 
 # --- main --- #
