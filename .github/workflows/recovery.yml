@@ -37,10 +37,10 @@ jobs:
              cd
              ls
              cd bin
-             mkdir ~/OrangeFox_10
-             cd ~/OrangeFox_10
-             rsync rsync://sources.orangefox.download/sources/fox_10.0 . --progress -a
-             cd ~/OrangeFox_10/sync
-             ./get_fox_10.sh ~/OrangeFox_10/fox_10.0
+             mkdir ~/OrangeFox_11
+             cd ~/OrangeFox_11
+             rsync rsync://sources.orangefox.download/sources/fox_11.0 . --progress -a
+             cd ~/OrangeFox_11/sync
+             ./get_fox_11.sh ~/OrangeFox_11/fox_11.0
              git clone https://github.com/Gofaraway71/ofox_device_realme_RMX1931
              ls
